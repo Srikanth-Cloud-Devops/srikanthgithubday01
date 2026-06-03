@@ -1,0 +1,10 @@
+name: githubvariable
+on: workflow_dispatch
+jobs:
+  variable:
+     runs_on: ubuntu-latest
+     steps: 
+       -name: print variable
+        run: echo Hello, $MY_NAME
+     
+      
