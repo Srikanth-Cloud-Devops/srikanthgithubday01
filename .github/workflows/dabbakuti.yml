@@ -5,4 +5,6 @@
      runs-on: ubuntu-latest 
      steps: 
          - name: Print hello dabbakuti
-           run: echo "hello dabbakuti"
+           run: |
+             echo "hello dabbakuti"
+             echo "hello srikanth"
