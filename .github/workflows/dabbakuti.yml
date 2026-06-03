@@ -1,10 +1,19 @@
- name: Hello dabbakuti
+ name: Executing multiple jobs
  on: workflow_dispatch
  jobs:
-   hello:
+   build:
      runs-on: ubuntu-latest 
      steps: 
-         - name: Print hello dabbakuti
-           run: |
-             echo "hello dabbakuti"
-             echo "hello srikanth"
+         - name: Print hello build
+           run:  echo "this is build job"
+   test:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Print hello test
+          run: echo "this is test job"
+
+   deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Print hello deploy
+          run: echo "this is deploy job"
