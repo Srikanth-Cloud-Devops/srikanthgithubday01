@@ -1,5 +1,9 @@
  name: Executing multiple jobs
- on: push
+ on: 
+   push :
+   pull_request:
+     branches:
+       -main
  jobs:
    build:
      runs-on: ubuntu-latest 
