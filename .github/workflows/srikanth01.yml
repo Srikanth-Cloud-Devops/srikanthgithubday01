@@ -1,0 +1,9 @@
+ name: hello dabbakuti
+ on: workflow_dispatch
+ jobs:
+   hello:
+     runs-on: ubuntu-latest
+     steps:
+       - name: print hello dabbakuti
+         run: "hello dabbakuti" 
+       
